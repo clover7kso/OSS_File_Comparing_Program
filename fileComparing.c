@@ -40,10 +40,12 @@ void filestat2(void)
 
 void filetime1(void)
 {
+	time1 = *localtime(&stat1.st_mtime);
 }
 
 void filetime2(void)
 {
+	time2 = *localtime(&stat2.st_mtime);
 }
 
 void sizecmp(void)
